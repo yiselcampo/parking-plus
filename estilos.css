@@ -1,10 +1,13 @@
-:root{
+:root {
     --rojoPrincipal: #CB341D;
     --grisClaro: #d9d9d9;
-    --grisOscuro:  #535353;
-
-
+    --grisOscuro: #535353;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .inter-400 {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -19,55 +22,63 @@ body {
 }
 
 .rojo {
-    color:  var(--rojoPrincipal);
+    color: var(--rojoPrincipal);
 }
-.gris-oscuro{
+
+.gris-oscuro {
     color: var(--grisOscuro);
 }
+
 .gris-claro {
     color: var(--grisClaro);
- }
- .contenedor {
-    display:flex;
+}
+
+.contenedor {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
 
- }
- .contenedor-logo{
+}
+
+.contenedor-logo {
     width: 400px;
     text-align: center;
     margin-bottom: 20px;
- }
- .contenedor-formulario{
+}
+
+.contenedor-formulario {
     background-color: white;
     width: 20%;
     padding: 15px;
     border-radius: 8px;
- }
- .contenedor-formulario form{
+}
+
+.contenedor-formulario form {
     display: flex;
     flex-direction: column;
 
- }
- .contenedor-formulario label{
+}
+
+.contenedor-formulario label {
     margin-bottom: 5px;
- }
-.contenedor-formulario input{
+}
+
+.contenedor-formulario input {
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid  #ccc;
-    border-radius: 4px ;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
 }
 
-.contenedor-formulario input:focus{
+.contenedor-formulario input:focus {
     border-color: var(--rojoPrincipal);
     outline: none;
 }
 
-.contenedor-formulario button{
+.contenedor-formulario button {
     padding: 10px;
     background-color: var(--rojoPrincipal);
     color: white;
@@ -75,6 +86,69 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
-.contenedor-formulario button:hover{
+
+.contenedor-formulario button:hover {
     background-color: #5f1111;
+}
+
+/* estilos para el dashboard */
+/* estilos del encabezado*/
+
+header {
+    background-color: var(--grisOscuro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.encabezado-logo {
+    display: flex;
+    align-items: center;
+}
+
+.cuadricula {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-content: center;
+    gap: 35px;
+    width: 50px;
+    margin: 0 auto;
+    height: 100vh;
+
+}
+.boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: center;
+    h3 {
+        margin-top: 10px;
+    }
+}
+
+.boton-menu {
+    background-color: white;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px var(--grisOscuro);
+    cursor: pointer;
+    transition: 1s ease-in-out;
+
+    &:hover {
+        background-color: var(--rojoPrincipal);
+
+        color: white;
+    }
+
+    
+
+    i {
+        font-size: 2rem;
+    }
 }
