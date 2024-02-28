@@ -23,7 +23,7 @@ include 'header.php';
  $vehiculos = $resultado->fetch_all(MYSQLI_ASSOC);
 
 ?>
-
+<h3 style="pading: left 2rem;">vehiculo Parqueados</h3>
 <div class="contenedor-listado-parqueado">
     <h3>Vehiculos Parqueados</h3>
 
